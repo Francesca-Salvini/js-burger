@@ -18,6 +18,24 @@ body {
     padding: 30px;
 }
 
+.check-row {
+    display: flex;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.check-row input {
+    align-self: center;
+}
+
+.check-row label {
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 5px;
+}
 /*HEADER*/
 header h1 {
     background-color: #fdbc41;
@@ -37,7 +55,7 @@ main {
 
 h4 {
     font-weight: 400;
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 
 .two-check {
@@ -61,6 +79,7 @@ h4 {
 
 .check-row.button {
     text-align: center;
+    display: block;
 }
 
 .check-row button {

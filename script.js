@@ -35,4 +35,8 @@ for(var i = 0; i < addonCheckboxes.length; i++) {
 
 console.log(prezzoBasePanino); //anteprima del prezzo finale
 
+//STAMPO prezzo a schermo (nel footer)
+document.getElementById('your-price').innerHTML = prezzoBasePanino + '$';
+
 });
+

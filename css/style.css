@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #fff5e2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+header h1 {
+    background-color: #fdbc41;
+    padding: 30px;
+}
+
+footer {
+    background-color: #d33259;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}

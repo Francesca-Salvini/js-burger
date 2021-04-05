@@ -17,6 +17,14 @@ calcolaButton.addEventListener( 'click', function (){
     var nameYourBurger = document.getElementById('name-your-burger');
     var nomeBurger = nameYourBurger.value;
     console.log(nomeBurger);
+
+    // verifico anche se l'utente ha inserito un coupon
+    var coupon = ["1234ABCDEF", "5678GHILM", "91011NOPQR"];
+    
+    var couponInserito = document.getElementById('discount-coupon');
+    var codiceCouponInserito = couponInserito.value;
+    console.log(codiceCouponInserito);
+
     if(nomeBurger.length == 0 ) {
         alert('You have to name your burger! ');
     } else {
@@ -40,6 +48,15 @@ calcolaButton.addEventListener( 'click', function (){
                 prezzoBasePanino = prezzoBasePanino + thisPrice;
                 
             }
+
+            // verifica che il coupon inserito dall'utente rientri nella lista dei coupon validi
+            //
+            // se verificato, applica uno sconto del 20% sul prezzo finale
+            if(codiceCouponInserito == coupon[i]) {
+                prezzoBasePanino = (prezzoBasePanino + thisPrice) - (0.2 * (prezzoBasePanino + thisPrice));
+            } 
+
+            
             
         }
         
